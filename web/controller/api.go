@@ -37,7 +37,7 @@ func (a *APIController) initRouter(g *gin.RouterGroup) {
 		{"POST", "/add", a.inboundController.addInbound},
 		{"POST", "/del/:id", a.inboundController.delInbound},
 		{"POST", "/update/:id", a.inboundController.updateInbound},
-		{"POST", "/clientIps/:email", a.inboundController.getClientIps},
+		{"POST", "/clientIps/:email", a.inboundController.getClientIps}, #TODO разобраться поч не работает эта залупа
 		{"POST", "/clearClientIps/:email", a.inboundController.clearClientIps},
 		{"POST", "/addClient", a.inboundController.addInboundClient},
 		{"POST", "/:id/delClient/:clientId", a.inboundController.delInboundClient},
